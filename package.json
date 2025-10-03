@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "request-promise-native": "^1.0.9"
+  }
+}
