@@ -47,6 +47,8 @@ Once that is updated, you can then execute the rename.js with Node:
 node rename.js
 ```
 
+For a sanity check, any values that have "Unknown" in them, the waiver id is saved as the badIds.txt file if you wish to review them.
+
 # Converting to PDF
 
 At this point, you will likely have a bunch of UnknownDate - UnknownFirstName UnknownLastName.html files in the directory. These are just invalid IDs, probably waivers that were never signed, so you can safely delete all of those files before converting them to PDF.
