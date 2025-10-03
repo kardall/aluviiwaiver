@@ -16,6 +16,14 @@ https://yourstore.aluvii.com
 
 Copy the yourstore part of the url for the scrape.js script.
 
+# Setting Up The Node Environment
+
+All you have to do is tell npm to install the packages.
+
+```
+npm i
+```
+
 # scrape.js
 
 Line 12, 13 and 14 are the variables for the min, max waiver IDs as well as how many waivers to pull at a time.
