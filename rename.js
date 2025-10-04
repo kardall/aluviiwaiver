@@ -12,7 +12,7 @@ const path = require('path');
 const cheerio = require('cheerio');
 
 const sourceDir = 'f:\\aluviiscraper';
-const targetDir = path.join(sourceDir, 'renamed');
+const targetDir = path.join(sourceDir, 'testing');
 
 if (!fs.existsSync(targetDir)) {
     fs.mkdirSync(targetDir);
@@ -53,7 +53,8 @@ files.forEach(file => {
     }).text().trim() || 'UnknownLast';
 
     // Add Date Signed element at the top of <body>
-    $('body').prepend(`<div style="background:#ffe;border-bottom:1px solid #ccc;padding:10px;font-size:1.2em;"><strong>Date Signed:</strong> ${dateSigned}</div>`);
+    $('#waiver-information > div.panel.panel-default > div.panel-heading').append(`<div style="background:#ffe;border-bottom:1px solid #ccc;padding:10px;font-size:1.2em;"><strong>Date Signed:</strong> ${dateSigned}</div>`)
+    //$('body').prepend(`<div style="background:#ffe;border-bottom:1px solid #ccc;padding:10px;font-size:1.2em;"><strong>Date Signed:</strong> ${dateSigned}</div>`);
 
         function makeid(length) {
         var result           = '';
